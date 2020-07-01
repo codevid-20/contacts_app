@@ -1,7 +1,5 @@
-contacts_hashes = []
-
-@contacts.each do |contact|
-  contacts_hashes << {
+@contacts.map do |contact|
+  {
     first_name: contact.first_name,
     last_name: contact.last_name,
     email: contact.email,
@@ -9,5 +7,3 @@ contacts_hashes = []
   }
 end
 
-
-contacts_hashes
