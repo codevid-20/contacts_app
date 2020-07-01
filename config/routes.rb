@@ -6,5 +6,7 @@ Rails.application.routes.draw do
   namespace :api do
           #  url            controller   method
     get "/first_contact" => "contacts#the_contact"
+
+    get "/all_contacts" => "contacts#every_contact"
   end
 end
