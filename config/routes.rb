@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   # EXAMPLE JSON ROUTE WITH API NAMESPACE
   namespace :api do
+    patch "/contacts/:id"  => "contacts#update"
   end
 end
